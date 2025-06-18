@@ -22,4 +22,39 @@ let isApproved = true; // Boolean Literal
 let firstNameTypes = undefined;
 let selectedColor = null;
 
-// 
+// object literal
+let person = {
+    name: 'Peter',
+    age: 30
+};
+
+// Dot notation
+person.name = 'John';
+
+// Bracket notation
+let selection = 'name';
+person[selection] = 'Mary';
+
+console.log(person.name);
+
+// Array literal
+let selectedColors = ['red', 'blue'];
+selectedColors[2] = 'green';
+selectedColors[3] = 1;
+console.log(selectedColors.length);
+
+// Functions
+
+// parameters
+function greet(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName);
+}
+
+// arguments
+greet('John', 'Smith');
+
+function square(number) {
+    return number * number;
+}
+
+console.log(square(2));
